@@ -33,11 +33,6 @@
       "src/Resources/contao/templates/"
     ]
   },
-  "autoload-dev": {
-    "psr-4": {
-      "HeimrichHannot\\BackendThemeBundle\\Test\\": "tests/"
-    }
-  },
   "config": {
     "preferred-install": "dist"
   },
