@@ -12,6 +12,9 @@ $finder = PhpCsFixer\Finder::create()
     ->exclude('Resources')
     ->exclude('Fixtures')
     ->in([__DIR__.'/src'])
+    ->exclude('vendor')
+    ->exclude('docs')
+    ->in([__DIR__])
 ;
 
 return PhpCsFixer\Config::create()
