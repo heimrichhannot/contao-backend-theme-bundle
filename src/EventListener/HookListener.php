@@ -10,9 +10,8 @@ namespace HeimrichHannot\BackendThemeBundle\EventListener;
 
 use Contao\CoreBundle\Routing\ScopeMatcher;
 use Symfony\Component\HttpFoundation\RequestStack;
-use Terminal42\ServiceAnnotationBundle\ServiceAnnotationInterface;
 
-class InitializeSystemListener implements ServiceAnnotationInterface
+class HookListener
 {
     /**
      * @var ScopeMatcher

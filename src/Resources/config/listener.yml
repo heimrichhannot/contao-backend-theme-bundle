@@ -1,8 +1,6 @@
 services:
   _defaults:
-    autowire: true
     public: true
+    autowire: true
 
-  HeimrichHannot\BackendThemeBundle\EventListener\InitializeSystemListener:
-    tags:
-      - { name: contao.hook, hook: initializeSystem }
+  HeimrichHannot\BackendThemeBundle\EventListener\HookListener: ~

@@ -1,3 +1,15 @@
 body:not(.popup)#top {
   background: #132330 radial-gradient(#234058,#0f1c26);
 }
+
+// remove chrome outlines
+body.chrome {
+  input, button, select, textarea {
+    &:focus {
+      outline-color: rgb(77, 144, 254);
+      outline-offset:-2px;
+      outline-style:auto;
+      outline-width:1px;
+    }
+  }
+}
