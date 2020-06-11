@@ -3,13 +3,23 @@ body:not(.popup)#top {
 }
 
 // remove chrome outlines
+@mixin chrome82-outline() {
+  outline-color: rgb(77, 144, 254) !important;
+  outline-offset: -2px !important;
+  outline-style: auto !important;
+  outline-width: 1px !important;
+}
+
 body.chrome {
   input, button, select, textarea {
     &:focus {
-      outline-color: rgb(77, 144, 254);
-      outline-offset:-2px;
-      outline-style:auto;
-      outline-width:1px;
+      @include chrome82-outline();
+    }
+  }
+
+  .chzn-container.tl_select.tl_chosen {
+    &:focus, &:focus > a, > a:focus, &.chzn-container-active, &.chzn-container-active > a {
+      @include chrome82-outline();
     }
   }
 }
