@@ -1,5 +1,5 @@
 body:not(.popup)#top {
-  background: #132330 radial-gradient(#234058,#0f1c26);
+  background: #132330 radial-gradient(#234058, #0f1c26);
 }
 
 // remove chrome outlines
@@ -21,5 +21,15 @@ body.chrome {
     &:focus, &:focus > a, > a:focus, &.chzn-container-active, &.chzn-container-active > a {
       @include chrome82-outline();
     }
+  }
+}
+
+#left #tl_navigation {
+  a {
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 5px;
   }
 }
