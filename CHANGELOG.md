@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2021-08-27
+
+- Added: php8 support
+
 ## [1.1.0] - 2020-06-30
 
 - added ellipsis to nav elements on the left
